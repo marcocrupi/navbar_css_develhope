@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
-    <nav class="navbar">
+  <body>
+    <header>
+      <span class="logo">Navbar</span>
+      <nav class="navbar">
         <div class="leftNavbar">
-            <span class="logo">Navbar</span>
-            <a href="#">Home</a>
-            <a href="#">Link</a>
-            <div class="dropdown">
-                <button class="dropbtn">Dropdown
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
+          <a class="hiddenElements nav-item nav-link" href="#">Home</a>
+          <a class="hiddenElements nav-item nav-link" href="#">Link</a>
+          <div class="dropdown hiddenElements nav-item nav-link">
+            <button class="dropbtn">
+              Dropdown
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
             </div>
-            <a href="#" class="disabled">Disabled</a>
+          </div>
+          <a href="#" class="disabled hiddenElements nav-item nav-link"
+            >Disabled</a
+          >
         </div>
         <div class="rightNavbar">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit">Search <i class="fa fa-search"></i></button>
+          <input
+            class="hiddenElements"
+            type="text"
+            placeholder="Search.."
+            name="search"
+          />
+          <button class="hiddenElements" type="submit">
+            Search <i class="fa fa-search"></i>
+          </button>
         </div>
-    </nav>
-
-</body>
-
+      </nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+    <script src="./script.js"></script>
+  </body>
 </html>
